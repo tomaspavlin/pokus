@@ -44,3 +44,9 @@ Aplikace se dostane k uživateli s již předvytvořenými hudebními žánry (p
 Pravidla ke skládání skladeb nemusí být omezená jen na hudební žánry, nýbrž mohou popisovat jakýkoliv způsob vymýšlení skladeb. Proto se pokusím vytvořit pravidla, která budou co nejvěruhodněji napodobovat způsob skládání skladeb rýznými hudebními skladateli počínaje popovými či rockovými hvězdami, přes skladatele jako Scott Joplin a Jelly Roll Morton a končeje Chopenem.
 Tato část je ale experimentální a rozhodně připoštím, že se nemusí podařit.
 
+## Programátorská specifikace
+### MIDI
+K vytváření midi souborů využiji volnou knihovnu **Sanford.Multimedia.Midi**.
+
+### Multithreading
+Při interpretaci pravidel a při vytváření skladeb UI nezamrzne, nýbrž se interpreter spustí v novém vlákně. Vytváření skladby bude možné přerušit.
